@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Форма логіну</h2>
+    <form id="loginForm">
+      <label for="fname">Ім’я:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Прізвище:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Електронна пошта:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Показати пароль</label>
+      </div>
+
+      <button type="submit">Увійти</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
