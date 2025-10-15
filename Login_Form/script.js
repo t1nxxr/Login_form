@@ -1,6 +1,11 @@
-const showPassword = document.getElementById("showPassword");
-const password = document.getElementById("password");
+const passwordInput = document.getElementById('password');
+const checkbox = document.getElementById('showPassword');
 
-showPassword.addEventListener("change", () => {
-  password.type = showPassword.checked ? "text" : "password";
+checkbox.addEventListener('change', () => {
+  passwordInput.type = checkbox.checked ? 'text' : 'password';
+});
+
+document.getElementById('loginForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Вхід виконано успішно!');
 });

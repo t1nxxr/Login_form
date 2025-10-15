@@ -1,17 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(120deg, #ee6dff, #6dd5fa);
-  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.login-container {
-  background-color: white;
-  padding: 30px 40px;
+.container {
+  background: white;
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 320px;
 }
 
@@ -20,36 +20,39 @@ h2 {
   margin-bottom: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 label {
-  display: block;
-  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%;
   padding: 8px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  margin-top: 5px;
 }
 
 .checkbox {
-  margin-bottom: 15px;
+  margin: 10px 0;
+  font-size: 14px;
 }
 
 button {
-  width: 100%;
-  background-color: #2980b9;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #1f6696;
+  background-color: #0056b3;
 }
